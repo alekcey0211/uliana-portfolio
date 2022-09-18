@@ -1,18 +1,11 @@
-import Counter from "../islands/Counter.tsx";
-
 export default function Home() {
   return (
-    <div class="p-4 mx-auto max-w-screen-md">
-      <img
-        src="/logo.svg"
-        class="w-32 h-32"
-        alt="the fresh logo: a sliced lemon dripping with juice"
-      />
-      <p class="my-6">
-        Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-        file, and refresh.
-      </p>
-      <Counter start={3} />
+    <div
+      class="h-screen max-h-[834px] w-screen grid content-center pl-28 text-white"
+      style="background: linear-gradient(180deg, #2B2A29 0%, #FEFEFE 103.63%)"
+    >
+      <h1 class="text-6xl">Portfolio</h1>
+      <h2 class="text-2xl">Web-disigner Ezhova Ulyana</h2>
     </div>
   );
 }
