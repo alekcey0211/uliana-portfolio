@@ -25,16 +25,16 @@ export default function Home(ctx: PageProps) {
             <h1 class="text-6xl">Portfolio</h1>
             <h2 class="text-2xl">Web-disigner Ezhova Ulyana</h2>
           </div>
+          <Image
+            src="10d52be6-0587-481c-a50e-58b67b0e9d93.png"
+            alt="Красивый трехмерный куб разваливающийся на части"
+            isLazy={false}
+            width={1486}
+            height={1388}
+            showAvif={false}
+            imgClassName="absolute -bottom-8 right-0 w-[800px]"
+          />
         </div>
-        <Image
-          src="10d52be6-0587-481c-a50e-58b67b0e9d93.png"
-          alt="Красивый трехмерный куб разваливающийся на части"
-          isLazy={false}
-          width={1486}
-          height={1388}
-          showAvif={false}
-          className="absolute -bottom-8 right-0 w-[800px]"
-        />
       </section>
       <section id="content" class="py-20 bg-white">
         <div class="container">
