@@ -4,8 +4,14 @@ export default {
   // selfURL: import.meta.url,
   hash: false,
   plugins: {
+    scroll: (parts) => ({
+      "scroll-behavior": parts[0],
+    }),
     "section-gradient": {
       background: "linear-gradient(180deg, #2B2A29 0%, #FFFFFF 100%)",
+    },
+    "footer-gradient": {
+      background: "linear-gradient(180deg, #FFFFFF 0%, #2B2A29 100%)",
     },
     "grid-rows": (parts) =>
       parts[0]?.startsWith("[")
@@ -36,9 +42,33 @@ export default {
         sans: "'Noto Sans', sans-serif",
         "noto-sans": '"Noto Sans"',
       },
+      colors: {
+        red: "#B62E1F",
+        "grey-2": "#4F4F4F",
+        "grey-6": "#F2F2F2",
+      },
+    },
+    container: (theme) => {
+      return {
+        center: true,
+        padding: {
+          ...theme("padding"),
+          sm: "2rem",
+          lg: "40px",
+          xl: "40px",
+          "2xl": "40px",
+        },
+      };
     },
   },
-  preflight: {
-    "@import": `url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap')`,
+  preflight: (cssRule, theme) => {
+    const css = theme.css;
+
+    cssRule["@import"] = [
+      "url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap')",
+    ];
+
+    cssRule[":root"] = css("scroll-smooth");
+    cssRule["body"] = css("bg-[#2B2A29]");
   },
 } as Configuration;
