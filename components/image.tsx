@@ -20,7 +20,6 @@ export function Image({
   className?: string;
   pictureClassName?: string;
   isLazy?: boolean;
-  aspect?: "square" | "video" | "4/3";
   showBreakpoint?: string;
   showAvif?: boolean;
 }) {

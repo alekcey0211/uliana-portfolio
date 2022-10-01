@@ -39,17 +39,16 @@ export default function Home(ctx: PageProps) {
             <h2 class="text-2xl">Web-designer Ezhova Ulyana</h2>
           </div>
           <Image
-            src="10d52be6-0587-481c-a50e-58b67b0e9d93.png"
+            src="1c07e0592012839423ea9e1d2d40472b.png"
             alt="Красивый трехмерный куб разваливающийся на части"
             isLazy={false}
             width={1486}
             height={1388}
-            showAvif={false}
-            className="absolute -bottom-8 right-0 w-[800px]"
+            className="absolute bottom-8 right-0 w-[600px]"
           />
         </div>
       </header>
-      <section id="content" class="py-20 bg-white">
+      <section id="content" class="py-20">
         <div class="container">
           <div class="relative w-max mb-28">
             <h1 class="text-3xl font-extralight">Cодержание</h1>
@@ -160,13 +159,13 @@ export default function Home(ctx: PageProps) {
           </div>
         </div>
       </section>
-      <section id="cases" class="py-20 bg-white">
+      <section id="cases" class="py-20 overflow-hidden">
         <div class="container">
           <div class="relative w-max mb-14">
             <h1 class="text-3xl font-extralight">Кейсы</h1>
             <div class="absolute bottom-0 right-0 -left-96 border-b-2 border-red" />
           </div>
-          <div class="grid gap-y-8">
+          <div class="grid gap-y-8 mb-14">
             <CaseTitle order={1} text="Корпоративный сайт" />
             <div class="flex gap-x-9 items-end">
               <div class="relative flex gap-x-16 gradient-1 p-12 w-max overflow-hidden">
@@ -185,21 +184,141 @@ export default function Home(ctx: PageProps) {
               </div>
               <Button text="Подробнее" icon={<icons.ArrowRight />} />
             </div>
-            <p class="text-2xl">
-              Задача: Редизайн сайта на основе брендбука.
-              <br />
-              <br />
-              Описание: Реальный проект. Корпоративный сайт с элементами
-              интернет-магазина.
-              <br />
-              Ознакомиться с работой можно по&nbsp;
-              <a href="https://tehmet.su/" class="text-red" target="_blank">
-                ссылке
-              </a>
-            </p>
+            <div class="grid text-2xl">
+              <span class="mb-6">
+                Задача: Редизайн сайта на основе брендбука.
+              </span>
+              <span>
+                Описание: Реальный проект. Корпоративный сайт с элементами
+                интернет-магазина.
+              </span>
+              <span>
+                Ознакомиться с работой можно по&nbsp;
+                <a href="https://tehmet.su/" class="text-red" target="_blank">
+                  ссылке
+                </a>
+              </span>
+            </div>
           </div>
-          <CaseTitle order={2} text="Лендинг" />
-          <CaseTitle order={3} text="3D моделирование" />
+          <div class="relative grid gap-y-8 mb-14">
+            <div class="absolute -z-10 inset-y-0 -inset-x-[9999px] gradient-1" />
+            <CaseTitle order={2} text="Лендинг" />
+            <div class="flex gap-x-9 items-end">
+              <div class="relative flex gap-x-[112px] bg-white w-max overflow-hidden">
+                <div class="grid content-start gap-y-2.5 p-12">
+                  <div
+                    class="w-16 h-16 rounded-full"
+                    style="background: linear-gradient(180deg, #EC656D 0%, #EF914F 99.99%, rgba(239, 145, 79, 0) 100%, rgba(239, 145, 79, 0) 100%, #EF914F 100%)"
+                  />
+                  <div class="w-16 h-16 rounded-full bg-[#DBEBD4]" />
+                  <div class="w-16 h-16 rounded-full bg-[#F1F7FA]" />
+                  <div class="w-16 h-16 rounded-full bg-[#B3B3B3]" />
+                </div>
+                <div class="relative pl-[80px]">
+                  <Image
+                    src="dae5af52a61694b49b7f6753ea710f45.jpg"
+                    width={1024}
+                    height={1652}
+                    className="absolute w-[386px] left-0 top-[80px]"
+                  />
+                  <Image
+                    src="cce8a78dcac310d1c7dcc7ba020b3650.jpg"
+                    width={1440}
+                    height={2211}
+                    className="w-[440px]"
+                  />
+                </div>
+              </div>
+              <Button text="Подробнее" icon={<icons.ArrowRight />} />
+            </div>
+            <div class="grid text-2xl">
+              <span class="mb-6">
+                Задача: Создать лендинг для компании каршеринга с адаптивом для
+                планшета
+              </span>
+              <span>Описание: Учебный проект.</span>
+            </div>
+          </div>
+          <div class="relative grid gap-y-8 mb-14">
+            <div class="flex gap-x-9 items-end">
+              <div class="relative flex bg-grey-5 w-max overflow-hidden">
+                <div class="grid content-start gap-y-2.5 p-12">
+                  <div class="w-16 h-16 rounded-full bg-[#D06401]" />
+                  <div class="w-16 h-16 rounded-full bg-[#4968E3]" />
+                  <div class="w-16 h-16 rounded-full bg-[#8A9ADE]" />
+                  <div class="w-16 h-16 rounded-full bg-[#201F1F]" />
+                </div>
+                <Image
+                  src="506cf3302231ebfdf0581b9811f38369.jpg"
+                  width={1273}
+                  height={1164}
+                  className="w-[650px] pt-20"
+                />
+              </div>
+              <Button text="Подробнее" icon={<icons.ArrowRight />} />
+            </div>
+            <div class="grid text-2xl">
+              <span class="mb-6">
+                Задача: Создать отзывчивый сайт для клуба любителей велосипедов
+              </span>
+              <span>Описание: Учебный проект.</span>
+            </div>
+          </div>
+          <div class="grid gap-y-8 mb-14">
+            <CaseTitle order={3} text="3D моделирование" />
+            <div class="relative grid grid-cols-[1fr_1fr] gap-x-24 px-24 pt-36 pb-4">
+              <div class="absolute -z-10 inset-y-0 left-0 -right-[9999px] gradient-1" />
+              <div class="grid grid-rows-[500px_auto] justify-items-center gap-y-16">
+                <Image
+                  src="c71053d57898d9cc8a6187382c4fbe39.png"
+                  width={612}
+                  height={561}
+                  className="w-auto h-full"
+                />
+                <span class="text-2xl text-grey-3">
+                  Композиция с эффектом вращения
+                </span>
+              </div>
+              <div class="grid grid-rows-[500px_auto] justify-items-center gap-y-16">
+                <Image
+                  src="1c07e0592012839423ea9e1d2d40472b.png"
+                  width={684}
+                  height={655}
+                  className="w-auto h-full"
+                />
+                <span class="text-2xl text-grey-3">
+                  Разбиение объекта на фрагменты
+                </span>
+              </div>
+            </div>
+            <div class="grid grid-cols-[1fr_1fr] gap-x-24 px-24 pt-36 pb-4">
+              <div class="grid grid-rows-[500px_auto] justify-items-center gap-y-16">
+                <Image
+                  src="37c3cd914a91b42aa972d754db2d8817.png"
+                  width={644}
+                  height={634}
+                  className="w-auto h-full"
+                />
+                <span class="text-2xl text-grey-3">
+                  Полигональное моделирование
+                </span>
+              </div>
+              <div class="grid grid-rows-[500px_auto] justify-items-center gap-y-16">
+                <Image
+                  src="3fb0879262f7a55baa9c4d60d606aaaf.png"
+                  width={354}
+                  height={346}
+                  className="w-auto h-full"
+                />
+                <span class="text-2xl text-grey-3">
+                  Деформация объектов в композиции
+                </span>
+              </div>
+            </div>
+            <div class="grid text-2xl">
+              <span>Описание: Модели созданы в Cinema 4D.</span>
+            </div>
+          </div>
           <CaseTitle order={4} text="Графический дизайн" />
           <CaseTitle order={5} text="Дизайн интерфейса" />
         </div>

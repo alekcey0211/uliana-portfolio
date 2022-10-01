@@ -45,7 +45,9 @@ export default {
       colors: {
         red: "#B62E1F",
         "grey-2": "#4F4F4F",
+        "grey-3": "#828282",
         "grey-4": "#BDBDBD",
+        "grey-5": "#E0E0E0",
         "grey-6": "#F2F2F2",
       },
     },
@@ -70,7 +72,6 @@ export default {
     ];
 
     cssRule[":root"] = css("scroll-smooth");
-    cssRule["body"] = css("bg-[#2B2A29]");
-    cssRule["img"] = css("block");
+    cssRule["img"] = css("block max-w-full max-h-full");
   },
 } as Configuration;
