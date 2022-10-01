@@ -291,7 +291,7 @@ export default function Home(ctx: PageProps) {
                 </span>
               </div>
             </div>
-            <div class="grid grid-cols-[1fr_1fr] gap-x-24 px-24 pt-36 pb-4">
+            <div class="grid grid-cols-[1fr_1fr] gap-x-24 px-16 pt-36 pb-4">
               <div class="grid grid-rows-[500px_auto] justify-items-center gap-y-16">
                 <Image
                   src="37c3cd914a91b42aa972d754db2d8817.png"
