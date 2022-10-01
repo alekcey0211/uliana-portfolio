@@ -7,10 +7,10 @@ export default {
     scroll: (parts) => ({
       "scroll-behavior": parts[0],
     }),
-    "section-gradient": {
+    "gradient-1": {
       background: "linear-gradient(180deg, #2B2A29 0%, #FFFFFF 100%)",
     },
-    "footer-gradient": {
+    "gradient-1-inverse": {
       background: "linear-gradient(180deg, #FFFFFF 0%, #2B2A29 100%)",
     },
     "grid-rows": (parts) =>
@@ -45,6 +45,7 @@ export default {
       colors: {
         red: "#B62E1F",
         "grey-2": "#4F4F4F",
+        "grey-4": "#BDBDBD",
         "grey-6": "#F2F2F2",
       },
     },
@@ -70,5 +71,6 @@ export default {
 
     cssRule[":root"] = css("scroll-smooth");
     cssRule["body"] = css("bg-[#2B2A29]");
+    cssRule["img"] = css("block");
   },
 } as Configuration;

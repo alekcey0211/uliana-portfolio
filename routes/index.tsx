@@ -1,6 +1,19 @@
 import { HeadElement } from "../components/head.tsx";
 import { Image } from "../components/image.tsx";
 import { PageProps } from "$fresh/server.ts";
+import { icons } from "../components/icons.tsx";
+import { Button } from "../components/button.tsx";
+
+const CaseTitle = ({ order, text }: { order: number; text: string }) => {
+  return (
+    <div class="-ml-10 flex gap-x-2 items-baseline">
+      <span class="text-9xl text-grey-4">
+        {order.toString().padStart(2, "0")}
+      </span>
+      <span class="text-3xl text-red uppercase">{text}</span>
+    </div>
+  );
+};
 
 export default function Home(ctx: PageProps) {
   const { url } = ctx;
@@ -12,7 +25,7 @@ export default function Home(ctx: PageProps) {
   return (
     <>
       <HeadElement title="Портфолио" url={url} />
-      <section class="section-gradient">
+      <header class="gradient-1">
         <div class="relative container h-[800px] grid grid-rows-[auto_1fr] py-20 text-white">
           <nav class="flex gap-20">
             {links.map(({ link, name }) => (
@@ -23,7 +36,7 @@ export default function Home(ctx: PageProps) {
           </nav>
           <div class="grid content-center">
             <h1 class="text-6xl">Portfolio</h1>
-            <h2 class="text-2xl">Web-disigner Ezhova Ulyana</h2>
+            <h2 class="text-2xl">Web-designer Ezhova Ulyana</h2>
           </div>
           <Image
             src="10d52be6-0587-481c-a50e-58b67b0e9d93.png"
@@ -32,10 +45,10 @@ export default function Home(ctx: PageProps) {
             width={1486}
             height={1388}
             showAvif={false}
-            imgClassName="absolute -bottom-8 right-0 w-[800px]"
+            className="absolute -bottom-8 right-0 w-[800px]"
           />
         </div>
-      </section>
+      </header>
       <section id="content" class="py-20 bg-white">
         <div class="container">
           <div class="relative w-max mb-28">
@@ -117,7 +130,6 @@ export default function Home(ctx: PageProps) {
               src="6885e49c-fa9d-40ee-a2d0-fedc11fcaf38.jpg"
               width={660}
               height={822}
-              className="block"
             />
             <div class="grid gap-y-10">
               <div class="text-2xl text-grey-2">
@@ -154,9 +166,45 @@ export default function Home(ctx: PageProps) {
             <h1 class="text-3xl font-extralight">Кейсы</h1>
             <div class="absolute bottom-0 right-0 -left-96 border-b-2 border-red" />
           </div>
+          <div class="grid gap-y-8">
+            <CaseTitle order={1} text="Корпоративный сайт" />
+            <div class="flex gap-x-9 items-end">
+              <div class="relative flex gap-x-16 gradient-1 p-12 w-max overflow-hidden">
+                <div class="grid content-start gap-y-2.5">
+                  <div class="w-16 h-16 rounded-full bg-[#9C9EA8]" />
+                  <div class="w-16 h-16 rounded-full bg-[#0089CC]" />
+                  <div class="w-16 h-16 rounded-full bg-[#0A529A]" />
+                  <div class="w-16 h-16 rounded-full bg-[#39446B]" />
+                </div>
+                <Image
+                  src="c59a320d-728a-458e-9e36-bb75eac4c2ec.jpg"
+                  width={1920}
+                  height={1644}
+                  className="w-[640px] -rotate-[20.1deg] translate-y-8 origin-top-right"
+                />
+              </div>
+              <Button text="Подробнее" icon={<icons.ArrowRight />} />
+            </div>
+            <p class="text-2xl">
+              Задача: Редизайн сайта на основе брендбука.
+              <br />
+              <br />
+              Описание: Реальный проект. Корпоративный сайт с элементами
+              интернет-магазина.
+              <br />
+              Ознакомиться с работой можно по&nbsp;
+              <a href="https://tehmet.su/" class="text-red" target="_blank">
+                ссылке
+              </a>
+            </p>
+          </div>
+          <CaseTitle order={2} text="Лендинг" />
+          <CaseTitle order={3} text="3D моделирование" />
+          <CaseTitle order={4} text="Графический дизайн" />
+          <CaseTitle order={5} text="Дизайн интерфейса" />
         </div>
       </section>
-      <footer class="footer-gradient">
+      <footer class="gradient-1-inverse">
         <div class="relative container h-[800px]" />
       </footer>
     </>

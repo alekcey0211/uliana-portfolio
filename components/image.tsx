@@ -8,7 +8,7 @@ export function Image({
   baseFormat: baseFormatDefault,
   isLazy = true,
   className,
-  imgClassName,
+  pictureClassName,
   showBreakpoint,
   showAvif = true,
 }: {
@@ -18,7 +18,7 @@ export function Image({
   height?: number;
   baseFormat?: string;
   className?: string;
-  imgClassName?: string;
+  pictureClassName?: string;
   isLazy?: boolean;
   aspect?: "square" | "video" | "4/3";
   showBreakpoint?: string;
@@ -30,7 +30,7 @@ export function Image({
     : undefined;
 
   return (
-    <picture class={className}>
+    <picture class={pictureClassName}>
       {showBreakpointWidth && (
         <source
           media={`(max-width: ${showBreakpointWidth}px)`}
@@ -69,7 +69,7 @@ export function Image({
         alt={alt}
         width={width}
         height={height}
-        class={imgClassName}
+        class={className}
         {...(isLazy && {
           loading: "lazy",
           decoding: "async",
