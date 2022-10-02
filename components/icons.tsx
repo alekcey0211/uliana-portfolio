@@ -11,6 +11,25 @@ function ArrowRight(props: JSX.SVGAttributes<SVGSVGElement>) {
   );
 }
 
+function ArrowUp(props: JSX.SVGAttributes<SVGSVGElement>) {
+  return (
+    <svg
+      width="24"
+      height="24"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path d="M12 19V5m-7 7 7-7 7 7" />
+    </svg>
+  );
+}
+
 export const icons = {
   ArrowRight,
+  ArrowUp,
 };

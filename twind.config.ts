@@ -1,8 +1,6 @@
 import { Configuration } from "twind";
 
 export default {
-  // selfURL: import.meta.url,
-  hash: false,
   plugins: {
     scroll: (parts) => ({
       "scroll-behavior": parts[0],
@@ -64,13 +62,14 @@ export default {
       };
     },
   },
-  preflight: (cssRule, theme) => {
-    const css = theme.css;
-
+  preflight: (cssRule, { css, theme }) => {
     cssRule["@import"] = [
       "url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap')",
     ];
 
+    cssRule["*:focus"] = {
+      "outline-color": theme("colors", "red") + "!important",
+    };
     cssRule[":root"] = css("scroll-smooth");
     cssRule["img"] = css("block max-w-full max-h-full");
   },

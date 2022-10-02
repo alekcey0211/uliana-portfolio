@@ -11,6 +11,7 @@ export function Image({
   pictureClassName,
   showBreakpoint,
   showAvif = true,
+  showWebp = true,
 }: {
   src: string;
   alt?: string;
@@ -22,6 +23,7 @@ export function Image({
   isLazy?: boolean;
   showBreakpoint?: string;
   showAvif?: boolean;
+  showWebp?: boolean;
 }) {
   const baseFormat = baseFormatDefault ? baseFormatDefault : getBaseFormat(src);
   const showBreakpointWidth = showBreakpoint
@@ -47,14 +49,16 @@ export function Image({
           })}
         />
       )}
-      <source
-        type="image/webp"
-        srcset={src.replace(`.${baseFormat}`, ".webp")}
-        sizes="100vw"
-        {...(showBreakpointWidth && {
-          media: `(min-width: ${showBreakpointWidth}px)`,
-        })}
-      />
+      {showWebp && (
+        <source
+          type="image/webp"
+          srcset={src.replace(`.${baseFormat}`, ".webp")}
+          sizes="100vw"
+          {...(showBreakpointWidth && {
+            media: `(min-width: ${showBreakpointWidth}px)`,
+          })}
+        />
+      )}
       <source
         type={baseFormat === "jpg" ? "image/jpeg" : `image/${baseFormat}`}
         srcset={src}
