@@ -21,7 +21,7 @@ export default function AutoScrollImage({
 
   const scroll = useCallback(() => {
     container.current?.scrollBy({
-      top: 0.5,
+      top: 1,
     });
   }, [container]);
 
