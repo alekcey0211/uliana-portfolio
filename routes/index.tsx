@@ -4,6 +4,7 @@ import { PageProps } from "$fresh/server.ts";
 import { icons } from "../components/icons.tsx";
 import { Button } from "../components/button.tsx";
 import ScrollToTop from "../islands/ScrollToTop.tsx";
+import AutoScrollImage from "../islands/ScrollAnimation.tsx";
 
 const CaseTitle = ({ order, text }: { order: number; text: string }) => {
   return (
@@ -274,7 +275,7 @@ export default function Home(ctx: PageProps) {
                   src="c71053d57898d9cc8a6187382c4fbe39.png"
                   width={612}
                   height={561}
-                  className="w-auto h-full"
+                  className="w-auto h-full object-contain object-center"
                 />
                 <span class="text-2xl text-grey-3">
                   Композиция с эффектом вращения
@@ -285,7 +286,7 @@ export default function Home(ctx: PageProps) {
                   src="1c07e0592012839423ea9e1d2d40472b.png"
                   width={684}
                   height={655}
-                  className="w-auto h-full"
+                  className="w-auto h-full object-contain object-center"
                 />
                 <span class="text-2xl text-grey-3">
                   Разбиение объекта на фрагменты
@@ -298,7 +299,7 @@ export default function Home(ctx: PageProps) {
                   src="37c3cd914a91b42aa972d754db2d8817.png"
                   width={644}
                   height={634}
-                  className="w-auto h-full"
+                  className="w-auto h-full object-contain object-center"
                 />
                 <span class="text-2xl text-grey-3">
                   Полигональное моделирование
@@ -309,7 +310,7 @@ export default function Home(ctx: PageProps) {
                   src="3fb0879262f7a55baa9c4d60d606aaaf.png"
                   width={354}
                   height={346}
-                  className="w-auto h-full"
+                  className="w-auto h-full object-contain object-center"
                 />
                 <span class="text-2xl text-grey-3">
                   Деформация объектов в композиции
@@ -392,14 +393,16 @@ export default function Home(ctx: PageProps) {
                   height={1881}
                   className="w-[158px] border-t-1 border-l-1 border-r-1 border-grey-3 mr-8"
                 /> */}
-                <div class="overflow-scroll h-[680px] overscroll-contain">
-                  <Image
-                    src="9bd12f11-faba-42dd-8317-0ee245d4534b.jpg"
-                    width={431}
-                    height={4096}
-                    className="w-[158px] border-1 border-grey-3 max-h-[9999px]"
-                  />
-                </div>
+                <AutoScrollImage
+                  containerHeight="640px"
+                  imageProps={{
+                    src: "9bd12f11-faba-42dd-8317-0ee245d4534b.jpg",
+                    width: 431,
+                    height: 4096,
+                    className:
+                      "w-[158px] border-1 border-grey-3 max-h-[9999px]",
+                  }}
+                />
               </div>
               <Button text="Подробнее" icon={<icons.ArrowRight />} />
             </div>
