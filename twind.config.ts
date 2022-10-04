@@ -2,6 +2,16 @@ import { Configuration } from "twind";
 
 export default {
   plugins: {
+    "gallery-open": {},
+    "aspect-auto": {
+      "aspect-ratio": `auto`,
+    },
+    "aspect-square": {
+      "aspect-ratio": `1 / 1`,
+    },
+    "aspect-video": {
+      "aspect-ratio": `16 / 9`,
+    },
     scroll: (parts) => ({
       "scroll-behavior": parts[0],
     }),
@@ -33,6 +43,13 @@ export default {
         : {
             "grid-template-columns": `repeat(${parts[0]}, minmax(0,1fr))`,
           },
+    aspect: (parts) =>
+      parts[0]?.startsWith("[") && {
+        "aspect-ratio": parts[0]
+          .substring(1, parts[0].length - 1)
+          .split("/")
+          .join(" / "),
+      },
   },
   theme: {
     extend: {
@@ -71,6 +88,6 @@ export default {
       "outline-color": theme("colors", "red") + "!important",
     };
     cssRule[":root"] = css("scroll-smooth");
-    cssRule["img"] = css("block max-w-full max-h-full");
+    // cssRule["img"] = css("block max-w-full max-h-full");
   },
 } as Configuration;
