@@ -136,7 +136,7 @@ export default function Home(ctx: PageProps) {
               <div class="text-2xl text-grey-2">
                 Привет!
                 <br />
-                Меня зовут Улечка.
+                Меня зовут Ульяна.
                 <br />
                 Ищу удаленную работу в дружном коллективе.
                 <br />
