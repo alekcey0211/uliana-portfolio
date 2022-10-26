@@ -379,6 +379,11 @@ export default function Home(ctx: PageProps) {
               </div>
             </div>
             <div class="grid text-2xl">
+                <span class="mb-6">
+                Задача: Создала свою модель (логотип/элемент брендинга) для фестиваля фигурного катания с использованием Arnold Render.
+                  <br/>
+Практиковалась в работе с рендером, светом и материалами в 3D моделировании.
+              </span>
               <span>Описание: Модели созданы в Cinema 4D.</span>
             </div>
           </div>
