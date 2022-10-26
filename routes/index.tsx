@@ -131,6 +131,7 @@ export default function Home(ctx: PageProps) {
               src="/image/fd14c40717264b8ea1b1e46ba74d547d.jpg"
               width={630}
               height={745}
+              class="rounded-full"
             />
             <div class="grid gap-y-10">
               <div class="text-2xl text-grey-2">
@@ -498,7 +499,7 @@ export default function Home(ctx: PageProps) {
               />
             </div>
             <div class="grid text-2xl mb-24">
-              <span class="max-w-[830px]">
+              <span class="max-w-[830px] mb-6">
                 Задача: Создать дизайн интерфейса для ведения базы данных
                 пилотного проекта компании Роснефть в соответствии с брендбуком.
                 </span>
