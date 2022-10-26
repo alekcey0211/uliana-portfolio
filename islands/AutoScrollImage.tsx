@@ -37,13 +37,13 @@ export default function AutoScrollImage({
   }, []);
 
   useEffect(() => {
-    if (!IS_BROWSER || !container.current || !isVisible) return;
+    if (!IS_BROWSER || !container.current) return;
 
     const hasScroll =
       container.current.scrollTop + container.current.clientHeight <
       container.current.scrollHeight - 1;
 
-    if (!isHover && hasScroll) {
+    if (!isHover && hasScroll && isVisible) {
       animation.start();
     } else {
       animation.stop();

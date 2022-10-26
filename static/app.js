@@ -1,8 +1,19 @@
-// deno-lint-ignore-file
 import PhotoSwipeLightbox from "./photoswipe/photoswipe-lightbox.esm.min.js";
+
 const lightbox = new PhotoSwipeLightbox({
   gallery: ".gallery-open",
-  // initialZoomLevel: .75,
+  secondaryZoomLevel: 1,
   pswpModule: () => import("./photoswipe/photoswipe.esm.min.js"),
 });
 lightbox.init();
+
+window.galleryOpen = (id) => {
+  document.querySelector(`#${id} a`)?.click();
+};
+const lightbox2 = new PhotoSwipeLightbox({
+  gallery: "[id^=gallery]",
+  children: "a",
+  secondaryZoomLevel: 1,
+  pswpModule: () => import("./photoswipe/photoswipe.esm.min.js"),
+});
+lightbox2.init();

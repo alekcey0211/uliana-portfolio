@@ -1,4 +1,14 @@
+const cacheExists = new Map<string, { webp: boolean; avif: boolean }>();
+
 const getBaseFormat = (src: string) => (src.endsWith("png") ? "png" : "jpeg");
+const exists = (file: string) => {
+  try {
+    Deno.statSync(file);
+    return true;
+  } catch (error) {
+    return false;
+  }
+};
 
 export function Image({
   src,
@@ -10,8 +20,6 @@ export function Image({
   className,
   pictureClassName,
   showBreakpoint,
-  showAvif = true,
-  showWebp = true,
 }: {
   src: string;
   alt?: string;
@@ -21,14 +29,23 @@ export function Image({
   className?: string;
   pictureClassName?: string;
   isLazy?: boolean;
+  aspect?: "square" | "video" | "4/3";
   showBreakpoint?: string;
-  showAvif?: boolean;
-  showWebp?: boolean;
 }) {
   const baseFormat = baseFormatDefault ? baseFormatDefault : getBaseFormat(src);
   const showBreakpointWidth = showBreakpoint
     ? { sm: 640, md: 768, lg: 1024, xl: 1280, "2xl": 1536 }[showBreakpoint]
     : undefined;
+
+  const webp = src.replace(`.${baseFormat}`, ".webp");
+  const avif = src.replace(`.${baseFormat}`, ".avif");
+
+  if (!cacheExists.has(src)) {
+    cacheExists.set(src, {
+      webp: exists(`./static${webp}`),
+      avif: exists(`./static${avif}`),
+    });
+  }
 
   return (
     <picture class={pictureClassName}>
@@ -36,24 +53,22 @@ export function Image({
         <source
           media={`(max-width: ${showBreakpointWidth}px)`}
           sizes="1px"
-          srcset="/assets/img/blank.gif 1w"
+          srcset="/blank.gif 1w"
         />
       )}
-      {showAvif && (
+      {cacheExists.get(src)?.avif && (
         <source
           type="image/avif"
-          srcset={src.replace(`.${baseFormat}`, ".avif")}
-          sizes="100vw"
+          srcset={avif}
           {...(showBreakpointWidth && {
             media: `(min-width: ${showBreakpointWidth}px)`,
           })}
         />
       )}
-      {showWebp && (
+      {cacheExists.get(src)?.webp && (
         <source
           type="image/webp"
-          srcset={src.replace(`.${baseFormat}`, ".webp")}
-          sizes="100vw"
+          srcset={webp}
           {...(showBreakpointWidth && {
             media: `(min-width: ${showBreakpointWidth}px)`,
           })}
@@ -62,7 +77,6 @@ export function Image({
       <source
         type={baseFormat === "jpg" ? "image/jpeg" : `image/${baseFormat}`}
         srcset={src}
-        sizes="100vw"
         {...(showBreakpointWidth && {
           media: `(min-width: ${showBreakpointWidth}px)`,
         })}

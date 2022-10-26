@@ -2,6 +2,7 @@ import { Configuration } from "twind";
 
 export default {
   plugins: {
+    gallery: {},
     "gallery-open": {},
     "aspect-auto": {
       "aspect-ratio": `auto`,
@@ -15,6 +16,12 @@ export default {
     scroll: (parts) => ({
       "scroll-behavior": parts[0],
     }),
+    "w-fit": {
+      width: "fit-content",
+    },
+    isolate: {
+      isolation: "isolate",
+    },
     "gradient-1": {
       background: "linear-gradient(180deg, #2B2A29 0%, #FFFFFF 100%)",
     },
@@ -59,6 +66,7 @@ export default {
       },
       colors: {
         red: "#B62E1F",
+        "grey-1": "#333333",
         "grey-2": "#4F4F4F",
         "grey-3": "#828282",
         "grey-4": "#BDBDBD",
