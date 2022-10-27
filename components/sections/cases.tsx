@@ -5,7 +5,7 @@ import { Image } from "../image.tsx";
 
 const Title = ({ order, text }: { order: number; text: string }) => {
   return (
-    <div class="-ml-10 flex gap-x-2 items-baseline">
+    <div class="flex gap-x-2 items-baseline">
       <span class="text-9xl text-grey-4">
         {order.toString().padStart(2, "0")}
       </span>
@@ -24,7 +24,7 @@ export const Cases = () => {
         </div>
         <div id="corporate-website" class="grid gap-y-8 mb-14">
           <Title order={1} text="Корпоративный сайт" />
-          <div class="flex gap-x-9 items-end">
+          <div class="flex flex-wrap gap-9 items-end">
             <div class="relative flex gap-x-16 gradient-1 p-12 w-max overflow-hidden">
               <div class="grid content-start gap-y-2.5">
                 <div class="w-16 h-16 rounded-full bg-[#9C9EA8]" />
@@ -75,11 +75,11 @@ export const Cases = () => {
             </span>
           </div>
         </div>
-        <div id="landing-page" class="relative grid gap-y-8 mb-14">
+        <div id="landing-page" class="relative grid gap-y-8 mb-6 py-8">
           <div class="absolute -z-10 inset-y-0 -inset-x-[9999px] gradient-1" />
           <Title order={2} text="Лендинг" />
-          <div class="flex gap-x-9 items-end">
-            <div class="relative flex gap-x-[112px] bg-white w-max overflow-hidden">
+          <div class="flex flex-wrap gap-9 items-end">
+            <div class="relative flex gap-x-[112px] bg-white w-max">
               <div class="grid content-start gap-y-2.5 p-12">
                 <div
                   class="w-16 h-16 rounded-full"
@@ -94,7 +94,7 @@ export const Cases = () => {
                 class="relative pl-[80px]"
               >
                 <a
-                  class="block w-max absolute left-0 top-[80px]"
+                  class="block w-max absolute left-0 bottom-0"
                   href="/image/dae5af52a61694b49b7f6753ea710f45.png"
                   data-pswp-width="1024"
                   data-pswp-height="2650"
@@ -103,7 +103,7 @@ export const Cases = () => {
                   <Image
                     src="/image/dae5af52a61694b49b7f6753ea710f45.jpg"
                     width={1024}
-                    height={1652}
+                    height={1576}
                     className="w-[386px]"
                   />
                 </a>
@@ -141,7 +141,7 @@ export const Cases = () => {
           </div>
         </div>
         <div class="relative grid gap-y-8 mb-14">
-          <div class="flex gap-x-9 items-end">
+          <div class="flex flex-wrap gap-9 items-end">
             <div
               id="gallery-d15f5b36-bf22-4332-8de7-83c2f9c98a7f"
               class="relative flex bg-grey-5 w-max overflow-hidden"
@@ -246,7 +246,7 @@ export const Cases = () => {
         </div>
         <div id="graphic-design" class="grid gap-y-8 mb-14">
           <Title order={4} text="Графический дизайн" />
-          <div class="flex gap-x-9 items-end">
+          <div class="flex flex-wrap gap-9 items-end">
             <div class="relative flex gap-x-[82px] bg-white w-max overflow-hidden bg-grey-5 p-12">
               <div class="grid content-start gap-y-2.5">
                 <div
@@ -320,10 +320,10 @@ export const Cases = () => {
         </div>
         <div id="interface-design" class="grid gap-y-8 mb-14">
           <Title order={5} text="Дизайн интерфейса" />
-          <div class="flex gap-x-9 items-end">
+          <div class="flex flex-wrap gap-9 items-end">
             <div
               id="gallery-a5cc5b0e-c309-42ce-917b-ca5e253bdb69"
-              class="relative flex gap-x-4 bg-grey-5 w-max overflow-hidden"
+              class="relative flex gap-x-4 bg-grey-5 w-max"
             >
               <div class="grid content-start gap-y-2.5 p-12">
                 <div
@@ -368,7 +368,7 @@ export const Cases = () => {
             </span>
             <span>Описание: нереализованный проект.</span>
           </div>
-          <div class="flex gap-x-9 items-end">
+          <div class="flex flex-wrap gap-9 items-end">
             <div
               id="gallery-e98834a4-bae3-4d4b-86f2-45aedbbe4866"
               class="relative flex gap-x-4 gradient-1 w-max overflow-hidden pr-12"

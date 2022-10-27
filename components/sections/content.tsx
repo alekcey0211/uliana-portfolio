@@ -17,7 +17,7 @@ const Item = ({
       class={`grid grid-cols-1 justify-items-center content-start gap-y-3 hover:children:scale-105 children:transition-transform ${className}`}
     >
       <Image className="max-w-full block" {...image} />
-      <span class="text-xl font-extralight whitespace-nowrap">{title}</span>
+      <span class="text-xl font-extralight">{title}</span>
     </a>
   );
 };
@@ -52,7 +52,7 @@ export const Content = () => {
           />
           <Item
             href="#3d-modeling"
-            title="3D Моделирование"
+            title="3D&nbsp;Моделирование"
             className="self-end"
             image={{
               src: "/image/2521dcea-dd4a-40d5-80ed-d5e49e9f69b0.jpg",

@@ -4,7 +4,7 @@ export const Header = () => {
   const links = [
     { link: "#about", name: "About" },
     { link: "#cases", name: "Cases" },
-    { link: "#contact", name: "Contacts" },
+    { link: "#contacts", name: "Contacts" },
   ];
 
   return (
@@ -20,7 +20,7 @@ export const Header = () => {
         <div class="flex items-center justify-between gap-8">
           <h1 class="grid">
             <span class="text-6xl">Portfolio</span>
-            <span class="text-2xl">Web-designer Ezhova Ulyana</span>
+            <span class="text-2xl">Web-designer Ezhova&nbsp;Ulyana</span>
           </h1>
           <Image
             src="/image/2ef77200ef94e61c0855893855d5e3b7.png"

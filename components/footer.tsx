@@ -3,7 +3,7 @@ import { Image } from "./image.tsx";
 
 export const Footer = () => {
   return (
-    <footer id="footer" class="gradient-1 relative overflow-hidden">
+    <footer id="footer" class="gradient-1 relative">
       <div class="container pt-20 pb-14">
         <div class="grid grid-cols-3 text-white mb-20">
           <div class="grid gap-y-8">
@@ -15,6 +15,8 @@ export const Footer = () => {
               <li>Adobe Illustrator</li>
               <li>Figma</li>
               <li>CorelDRAW</li>
+              <li>ProtoPie</li>
+              <li>Miro</li>
             </ul>
           </div>
           <div class="grid gap-y-8 text-center">
@@ -24,7 +26,7 @@ export const Footer = () => {
             <span class="text-3xl underline">Дипломы</span>
           </div>
         </div>
-        <div>
+        <div id="contacts">
           <span class="block mb-8 text-3xl text-red">Контакты</span>
           <ul class="grid gap-y-4 text-3xl">
             <li class="flex items-center gap-4">
@@ -61,11 +63,11 @@ export const Footer = () => {
         </div>
       </div>
       <Image
-        src="/image/2ef77200ef94e61c0855893855d5e3b7.png"
+        src="/image/db60cb2f411b46e1bec6c9912cfb50c9.png"
         alt="Красивый трехмерный куб разваливающийся на части"
-        width={699}
-        height={663}
-        className="absolute -bottom-20 -right-28 w-[600px]"
+        width={567}
+        height={565}
+        className="absolute bottom-0 right-0 w-[600px]"
       />
     </footer>
   );

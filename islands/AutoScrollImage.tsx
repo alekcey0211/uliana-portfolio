@@ -51,7 +51,7 @@ export default function AutoScrollImage({
   }, [scroll, isHover, isVisible, container]);
 
   return (
-    <div ref={container} class="overflow-scroll overscroll-contain">
+    <div ref={container} class="overflow-y-scroll overscroll-contain">
       <div class={`h-[${containerHeight}]`}>
         <Image {...imageProps} />
       </div>
