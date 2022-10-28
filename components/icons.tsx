@@ -82,10 +82,38 @@ const Whatsapp = (props: JSX.SVGAttributes<SVGSVGElement>) => {
   );
 };
 
+const Figma = (props: JSX.SVGAttributes<SVGSVGElement>) => {
+  return (
+    <svg width="55" height="55" fill="none" {...props}>
+      <path
+        d="M21.705 50.417a7.639 7.639 0 0 0 7.64-7.64V35.14h-7.64a7.639 7.639 0 1 0 0 15.278Z"
+        fill="#0ACF83"
+      />
+      <path
+        d="M14.066 27.5a7.639 7.639 0 0 1 7.64-7.64h7.638V35.14h-7.639a7.639 7.639 0 0 1-7.639-7.64Z"
+        fill="#A259FF"
+      />
+      <path
+        d="M14.066 12.223a7.639 7.639 0 0 1 7.64-7.64h7.638v15.278h-7.639a7.639 7.639 0 0 1-7.639-7.639Z"
+        fill="#F24E1E"
+      />
+      <path
+        d="M29.344 4.583h7.639a7.639 7.639 0 1 1 0 15.278h-7.64V4.583Z"
+        fill="#FF7262"
+      />
+      <path
+        d="M44.622 27.5a7.64 7.64 0 1 1-15.279 0 7.64 7.64 0 0 1 15.279 0Z"
+        fill="#1ABCFE"
+      />
+    </svg>
+  );
+};
+
 export const icons = {
   ArrowRight,
   ArrowUp,
   Envelope,
   Phone,
   Whatsapp,
+  Figma
 };

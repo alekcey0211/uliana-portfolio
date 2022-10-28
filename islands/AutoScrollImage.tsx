@@ -19,6 +19,7 @@ export default function AutoScrollImage({
   imageProps: Parameters<typeof Image>[number];
 }) {
   const container = useRef<HTMLDivElement>(null);
+  const [timeoutNumber, setTimeoutNumber] = useState<number>();
 
   const isHover = useHover(container);
   const entry = useIntersectionObserver(container, {});
@@ -44,8 +45,18 @@ export default function AutoScrollImage({
       container.current.scrollHeight - 1;
 
     if (!isHover && hasScroll && isVisible) {
-      animation.start();
+      if (!timeoutNumber) {
+        setTimeoutNumber(
+          setTimeout(() => {
+            animation.start();
+          }, 500)
+        );
+      }
     } else {
+      if (timeoutNumber) {
+        clearTimeout(timeoutNumber);
+        setTimeoutNumber(undefined);
+      }
       animation.stop();
     }
   }, [scroll, isHover, isVisible, container]);

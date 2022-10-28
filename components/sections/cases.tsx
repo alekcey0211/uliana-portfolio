@@ -47,17 +47,21 @@ export const Cases = () => {
                 />
               </a>
             </div>
-            <Button
-              className="gallery-open"
-              text="Подробнее"
-              icon={<icons.ArrowRight />}
-              href="/image/ac388fcf-5a6f-4413-aa7c-8eb3f2c5ca9a.png"
-              target="_blank"
-              data={{
-                "data-pswp-width": "3600",
-                "data-pswp-height": "16404",
-              }}
-            />
+            <div class="flex gap-2.5">
+              <a href="#">
+                <icons.Figma />
+              </a>
+              <Button
+                className="gallery-open"
+                text="Подробнее"
+                href="/image/ac388fcf-5a6f-4413-aa7c-8eb3f2c5ca9a.png"
+                target="_blank"
+                data={{
+                  "data-pswp-width": "3600",
+                  "data-pswp-height": "16404",
+                }}
+              />
+            </div>
           </div>
           <div class="grid text-2xl">
             <span class="mb-6">
@@ -123,14 +127,18 @@ export const Cases = () => {
                 </a>
               </div>
             </div>
-            <Button
-              text="Подробнее"
-              icon={<icons.ArrowRight />}
-              data={{
-                onclick:
-                  "galleryOpen('gallery-1e3e0c0d-89b7-464c-823d-fdd5647e1cc9')",
-              }}
-            />
+            <div class="flex gap-2.5">
+              <a href="#">
+                <icons.Figma />
+              </a>
+              <Button
+                text="Подробнее"
+                data={{
+                  onclick:
+                    "galleryOpen('gallery-1e3e0c0d-89b7-464c-823d-fdd5647e1cc9')",
+                }}
+              />
+            </div>
           </div>
           <div class="grid text-2xl">
             <span class="mb-6">
@@ -167,14 +175,18 @@ export const Cases = () => {
                 />
               </a>
             </div>
-            <Button
-              text="Подробнее"
-              icon={<icons.ArrowRight />}
-              data={{
-                onclick:
-                  "galleryOpen('gallery-d15f5b36-bf22-4332-8de7-83c2f9c98a7f')",
-              }}
-            />
+            <div class="flex gap-2.5">
+              <a href="#">
+                <icons.Figma />
+              </a>
+              <Button
+                text="Подробнее"
+                data={{
+                  onclick:
+                    "galleryOpen('gallery-d15f5b36-bf22-4332-8de7-83c2f9c98a7f')",
+                }}
+              />
+            </div>
           </div>
           <div class="grid text-2xl">
             <span class="mb-6">
@@ -291,14 +303,18 @@ export const Cases = () => {
                 </a>
               </div>
             </div>
-            <Button
-              text="Подробнее"
-              icon={<icons.ArrowRight />}
-              data={{
-                onclick:
-                  "galleryOpen('gallery-420fa789-8aea-4206-b14e-f199575e6b85')",
-              }}
-            />
+            <div class="flex gap-2.5">
+              <a href="#">
+                <icons.Figma />
+              </a>
+              <Button
+                text="Подробнее"
+                data={{
+                  onclick:
+                    "galleryOpen('gallery-420fa789-8aea-4206-b14e-f199575e6b85')",
+                }}
+              />
+            </div>
           </div>
           <div class="grid text-2xl">
             <span class="mb-6">
@@ -352,14 +368,18 @@ export const Cases = () => {
                 />
               </a>
             </div>
-            <Button
-              text="Подробнее"
-              icon={<icons.ArrowRight />}
-              data={{
-                onclick:
-                  "galleryOpen('gallery-a5cc5b0e-c309-42ce-917b-ca5e253bdb69')",
-              }}
-            />
+            <div class="flex gap-2.5">
+              <a href="#">
+                <icons.Figma />
+              </a>
+              <Button
+                text="Подробнее"
+                data={{
+                  onclick:
+                    "galleryOpen('gallery-a5cc5b0e-c309-42ce-917b-ca5e253bdb69')",
+                }}
+              />
+            </div>
           </div>
           <div class="grid text-2xl mb-24">
             <span class="max-w-[830px] mb-6">
@@ -427,14 +447,18 @@ export const Cases = () => {
                 />
               </a>
             </div>
-            <Button
-              text="Подробнее"
-              icon={<icons.ArrowRight />}
-              data={{
-                onclick:
-                  "galleryOpen('gallery-e98834a4-bae3-4d4b-86f2-45aedbbe4866')",
-              }}
-            />
+            <div class="flex gap-2.5">
+              <a href="#">
+                <icons.Figma />
+              </a>
+              <Button
+                text="Подробнее"
+                data={{
+                  onclick:
+                    "galleryOpen('gallery-e98834a4-bae3-4d4b-86f2-45aedbbe4866')",
+                }}
+              />
+            </div>
           </div>
           <div class="grid text-2xl max-w-[830px]">
             <span class="mb-6">

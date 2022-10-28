@@ -35,7 +35,12 @@ export const About = () => {
               <br />
             </span>
             <div class="flex items-center gap-x-24 text-2xl text-red :children:hover:underline">
-              <a href="#">Resume</a>
+              <a
+                href="/files/CV Ezhova Uliana. Web-designer.pdf"
+                target="_blank"
+              >
+                Resume
+              </a>
               <a href="#contacts">Contacts</a>
             </div>
           </div>

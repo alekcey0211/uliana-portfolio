@@ -20,7 +20,13 @@ export const Footer = () => {
             </ul>
           </div>
           <div class="grid gap-y-8 text-center">
-            <span class="text-3xl underline">Резюме</span>
+            <a
+              class="text-3xl underline"
+              href="/files/CV Ezhova Uliana. Web-designer.pdf"
+              target="_blank"
+            >
+              Резюме
+            </a>
           </div>
           <div class="grid gap-y-8 text-right">
             <span class="text-3xl underline">Дипломы</span>
