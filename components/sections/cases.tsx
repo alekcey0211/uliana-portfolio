@@ -25,7 +25,7 @@ export const Cases = () => {
         <div id="corporate-website" class="grid gap-y-8 mb-14">
           <Title order={1} text="Корпоративный сайт" />
           <div class="flex flex-wrap gap-9 items-end">
-            <div class="relative flex gap-x-16 gradient-1 p-12 w-max overflow-hidden">
+            <div class="relative flex justify-between gradient-1 p-12 w-max overflow-hidden flex-grow-1 max-w-[802px]">
               <div class="grid content-start gap-y-2.5">
                 <div class="w-16 h-16 rounded-full bg-[#9C9EA8]" />
                 <div class="w-16 h-16 rounded-full bg-[#0089CC]" />
@@ -48,7 +48,10 @@ export const Cases = () => {
               </a>
             </div>
             <div class="flex gap-2.5">
-              <a href="#">
+              <a
+                href="#"
+                class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2] border-opacity-[0.1] hover:border-opacity-[0.2]"
+              >
                 <icons.Figma />
               </a>
               <Button
@@ -63,7 +66,7 @@ export const Cases = () => {
               />
             </div>
           </div>
-          <div class="grid text-2xl">
+          <div class="grid text-2xl max-w-[802px]">
             <span class="mb-6">
               Задача: Редизайн сайта компании "Техмет Урал" на основе брендбука.
             </span>
@@ -83,7 +86,7 @@ export const Cases = () => {
           <div class="absolute -z-10 inset-y-0 -inset-x-[9999px] gradient-1" />
           <Title order={2} text="Лендинг" />
           <div class="flex flex-wrap gap-9 items-end">
-            <div class="relative flex gap-x-[112px] bg-white w-max">
+            <div class="relative flex justify-between bg-white flex-grow-1 max-w-[802px]">
               <div class="grid content-start gap-y-2.5 p-12">
                 <div
                   class="w-16 h-16 rounded-full"
@@ -128,7 +131,7 @@ export const Cases = () => {
               </div>
             </div>
             <div class="flex gap-2.5">
-              <a href="#">
+              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
                 <icons.Figma />
               </a>
               <Button
@@ -140,7 +143,7 @@ export const Cases = () => {
               />
             </div>
           </div>
-          <div class="grid text-2xl">
+          <div class="grid text-2xl max-w-[802px]">
             <span class="mb-6">
               Задача: Создать лендинг для компании каршеринга с адаптивом для
               планшета
@@ -152,7 +155,7 @@ export const Cases = () => {
           <div class="flex flex-wrap gap-9 items-end">
             <div
               id="gallery-d15f5b36-bf22-4332-8de7-83c2f9c98a7f"
-              class="relative flex bg-grey-5 w-max overflow-hidden"
+              class="relative flex bg-grey-5 overflow-hidden justify-between flex-grow-1 max-w-[802px]"
             >
               <div class="grid content-start gap-y-2.5 p-12">
                 <div class="w-16 h-16 rounded-full bg-[#D06401]" />
@@ -176,7 +179,7 @@ export const Cases = () => {
               </a>
             </div>
             <div class="flex gap-2.5">
-              <a href="#">
+              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
                 <icons.Figma />
               </a>
               <Button
@@ -188,7 +191,7 @@ export const Cases = () => {
               />
             </div>
           </div>
-          <div class="grid text-2xl">
+          <div class="grid text-2xl max-w-[802px]">
             <span class="mb-6">
               Задача: Создать отзывчивый сайт для клуба любителей велосипедов
             </span>
@@ -259,7 +262,7 @@ export const Cases = () => {
         <div id="graphic-design" class="grid gap-y-8 mb-14">
           <Title order={4} text="Графический дизайн" />
           <div class="flex flex-wrap gap-9 items-end">
-            <div class="relative flex gap-x-[82px] bg-white w-max overflow-hidden bg-grey-5 p-12">
+            <div class="relative flex bg-white w-max overflow-hidden bg-grey-5 p-12 justify-between flex-grow-1 max-w-[802px]">
               <div class="grid content-start gap-y-2.5">
                 <div
                   class="w-16 h-16 rounded-full"
@@ -303,8 +306,8 @@ export const Cases = () => {
                 </a>
               </div>
             </div>
-            <div class="flex gap-2.5">
-              <a href="#">
+            <div class="flex gap-2.5 max-w-[802px]">
+              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
                 <icons.Figma />
               </a>
               <Button
@@ -316,7 +319,7 @@ export const Cases = () => {
               />
             </div>
           </div>
-          <div class="grid text-2xl">
+          <div class="grid text-2xl max-w-[802px]">
             <span class="mb-6">
               Задача: Создать дизайн информационного буклета с карвинг
               композициями. Подготовить макет к печати.
@@ -339,7 +342,7 @@ export const Cases = () => {
           <div class="flex flex-wrap gap-9 items-end">
             <div
               id="gallery-a5cc5b0e-c309-42ce-917b-ca5e253bdb69"
-              class="relative flex gap-x-4 bg-grey-5 w-max"
+              class="relative flex gap-x-4 bg-grey-5 justify-between flex-grow-1 max-w-[802px]"
             >
               <div class="grid content-start gap-y-2.5 p-12">
                 <div
@@ -369,7 +372,7 @@ export const Cases = () => {
               </a>
             </div>
             <div class="flex gap-2.5">
-              <a href="#">
+              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
                 <icons.Figma />
               </a>
               <Button
@@ -381,7 +384,7 @@ export const Cases = () => {
               />
             </div>
           </div>
-          <div class="grid text-2xl mb-24">
+          <div class="grid text-2xl mb-24 max-w-[802px]">
             <span class="max-w-[830px] mb-6">
               Задача: Создать дизайн интерфейса для ведения базы данных
               пилотного проекта компании Роснефть в соответствии с брендбуком.
@@ -391,7 +394,7 @@ export const Cases = () => {
           <div class="flex flex-wrap gap-9 items-end">
             <div
               id="gallery-e98834a4-bae3-4d4b-86f2-45aedbbe4866"
-              class="relative flex gap-x-4 gradient-1 w-max overflow-hidden pr-12"
+              class="relative flex gap-x-4 gradient-1 justify-between flex-grow-1 max-w-[802px] overflow-hidden pr-12"
             >
               <div class="grid content-start gap-y-2.5 p-12">
                 <div class="w-16 h-16 rounded-full bg-[#0058A3]" />
@@ -448,7 +451,7 @@ export const Cases = () => {
               </a>
             </div>
             <div class="flex gap-2.5">
-              <a href="#">
+              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
                 <icons.Figma />
               </a>
               <Button
@@ -460,7 +463,7 @@ export const Cases = () => {
               />
             </div>
           </div>
-          <div class="grid text-2xl max-w-[830px]">
+          <div class="grid text-2xl max-w-[802px]">
             <span class="mb-6">
               Задача: Создание макета карточки товара из интернет-магазина IKEA
               в Figma разрешение 1440px, 375px, 768px.
