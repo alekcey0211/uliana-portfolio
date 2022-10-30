@@ -6,6 +6,7 @@ const exists = (file: string) => {
     Deno.readFileSync(file);
     return true;
   } catch (error) {
+    console.error(error)
     return false;
   }
 };
