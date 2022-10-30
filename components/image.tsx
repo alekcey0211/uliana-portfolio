@@ -1,15 +1,29 @@
+import { IS_BROWSER } from "$fresh/runtime.ts";
+
 const cacheExists = new Map<string, { webp: boolean; avif: boolean }>();
 
 const getBaseFormat = (src: string) => (src.endsWith("png") ? "png" : "jpeg");
-const exists = (file: string) => {
+const exists = async (file: string) => {
   try {
-    Deno.statSync(file);
+    await Deno.stat(file);
     return true;
   } catch (error) {
-    console.error(error)
     return false;
   }
 };
+
+(async () => {
+  if (IS_BROWSER) return;
+  for await (const dirEntry of Deno.readDir("./static/image")) {
+    const name = dirEntry.name.split(".")[0];
+    if (!cacheExists.has(name)) {
+      cacheExists.set(name, {
+        webp: await exists(`./static/image/${name}.webp`),
+        avif: await exists(`./static/image/${name}.avif`),
+      });
+    }
+  }
+})();
 
 export function Image({
   src,
@@ -41,12 +55,7 @@ export function Image({
   const webp = src.replace(`.${baseFormat}`, ".webp");
   const avif = src.replace(`.${baseFormat}`, ".avif");
 
-  if (!cacheExists.has(src)) {
-    cacheExists.set(src, {
-      webp: exists(`./static${webp}`),
-      avif: exists(`./static${avif}`),
-    });
-  }
+  const name = src.split("/").reverse()[0].split(".")[0];
 
   return (
     <picture class={pictureClassName}>
@@ -57,7 +66,7 @@ export function Image({
           srcset="/blank.gif 1w"
         />
       )}
-      {cacheExists.get(src)?.avif && (
+      {cacheExists.get(name)?.avif && (
         <source
           type="image/avif"
           srcset={avif}
@@ -66,7 +75,7 @@ export function Image({
           })}
         />
       )}
-      {cacheExists.get(src)?.webp && (
+      {cacheExists.get(name)?.webp && (
         <source
           type="image/webp"
           srcset={webp}
