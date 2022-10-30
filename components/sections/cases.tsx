@@ -6,7 +6,7 @@ import { Image } from "../image.tsx";
 const Title = ({ order, text }: { order: number; text: string }) => {
   return (
     <div class="flex gap-x-2 items-baseline">
-      <span class="text-9xl text-grey-4">
+      <span class="text-9xl text-grey-3">
         {order.toString().padStart(2, "0")}
       </span>
       <span class="text-3xl text-red uppercase">{text}</span>
@@ -38,6 +38,7 @@ export const Cases = () => {
                 data-pswp-width="3600"
                 data-pswp-height="16404"
                 target="_blank"
+                {...{ "aria-label": "open image in fullscreen view" }}
               >
                 <Image
                   src="/image/c59a320d-728a-458e-9e36-bb75eac4c2ec.jpg"
@@ -50,7 +51,9 @@ export const Cases = () => {
             <div class="flex gap-2.5">
               <a
                 href="#"
-                class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2] border-opacity-[0.1] hover:border-opacity-[0.2]"
+                class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]"
+                {...{ "aria-label": "open project in figma" }}
+                target="_blank"
               >
                 <icons.Figma />
               </a>
@@ -106,6 +109,7 @@ export const Cases = () => {
                   data-pswp-width="1024"
                   data-pswp-height="2650"
                   target="_blank"
+                  {...{ "aria-label": "open image in fullscreen view" }}
                 >
                   <Image
                     src="/image/dae5af52a61694b49b7f6753ea710f45.jpg"
@@ -120,6 +124,7 @@ export const Cases = () => {
                   data-pswp-width="1440"
                   data-pswp-height="3275"
                   target="_blank"
+                  {...{ "aria-label": "open image in fullscreen view" }}
                 >
                   <Image
                     src="/image/cce8a78dcac310d1c7dcc7ba020b3650.jpg"
@@ -131,7 +136,12 @@ export const Cases = () => {
               </div>
             </div>
             <div class="flex gap-2.5">
-              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
+              <a
+                href="#"
+                class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]"
+                {...{ "aria-label": "open project in figma" }}
+                target="_blank"
+              >
                 <icons.Figma />
               </a>
               <Button
@@ -169,6 +179,7 @@ export const Cases = () => {
                 data-pswp-width="1280"
                 data-pswp-height="1573"
                 target="_blank"
+                {...{ "aria-label": "open image in fullscreen view" }}
               >
                 <Image
                   src="/image/506cf3302231ebfdf0581b9811f38369.jpg"
@@ -179,7 +190,12 @@ export const Cases = () => {
               </a>
             </div>
             <div class="flex gap-2.5">
-              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
+              <a
+                href="#"
+                class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]"
+                {...{ "aria-label": "open project in figma" }}
+                target="_blank"
+              >
                 <icons.Figma />
               </a>
               <Button
@@ -282,6 +298,7 @@ export const Cases = () => {
                   data-pswp-width="2480"
                   data-pswp-height="1754"
                   target="_blank"
+                  {...{ "aria-label": "open image in fullscreen view" }}
                 >
                   <Image
                     src="/image/087b41e7eb7ac31a9d1a69c5a9d3ddec.jpg"
@@ -296,6 +313,7 @@ export const Cases = () => {
                   data-pswp-width="2480"
                   data-pswp-height="1754"
                   target="_blank"
+                  {...{ "aria-label": "open image in fullscreen view" }}
                 >
                   <Image
                     src="/image/d14b6b2117018705636b39102ab79fa4.jpg"
@@ -307,7 +325,12 @@ export const Cases = () => {
               </div>
             </div>
             <div class="flex gap-2.5 max-w-[802px]">
-              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
+              <a
+                href="#"
+                class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]"
+                {...{ "aria-label": "open project in figma" }}
+                target="_blank"
+              >
                 <icons.Figma />
               </a>
               <Button
@@ -326,16 +349,6 @@ export const Cases = () => {
             </span>
             <span>Описание: Рабочий реализованный проект.</span>
           </div>
-          {/* <div class="flex gap-x-24 pt-10 pb-4">
-              <div class="grid grid-rows-[500px] justify-items-center gap-y-16">
-                <Image
-                  src="/image/6f1f68ee31c17554679ec893a49f5718.png"
-                  width={1059}
-                  height={1277}
-                  className="w-auto h-full"
-                />
-              </div>
-            </div> */}
         </div>
         <div id="interface-design" class="grid gap-y-8 mb-14">
           <Title order={5} text="Дизайн интерфейса" />
@@ -362,6 +375,7 @@ export const Cases = () => {
                 data-pswp-width="1440"
                 data-pswp-height="1308"
                 target="_blank"
+                {...{ "aria-label": "open image in fullscreen view" }}
               >
                 <Image
                   src="/image/5397dc61b9a8af420f8acd38f6ec57b9.jpg"
@@ -372,7 +386,12 @@ export const Cases = () => {
               </a>
             </div>
             <div class="flex gap-2.5">
-              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
+              <a
+                href="#"
+                class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]"
+                {...{ "aria-label": "open project in figma" }}
+                target="_blank"
+              >
                 <icons.Figma />
               </a>
               <Button
@@ -409,6 +428,7 @@ export const Cases = () => {
                   data-pswp-width="879"
                   data-pswp-height="4096"
                   target="_blank"
+                  {...{ "aria-label": "open image in fullscreen view" }}
                 >
                   <Image
                     src="/image/4f3faee47e9313e0e9d7e9a6346cb2cb.jpg"
@@ -423,6 +443,7 @@ export const Cases = () => {
                   data-pswp-width="632"
                   data-pswp-height="4096"
                   target="_blank"
+                  {...{ "aria-label": "open image in fullscreen view" }}
                 >
                   <Image
                     src="/image/d7fe4f682a857b4c383ce78fc6b8867e.jpg"
@@ -437,6 +458,7 @@ export const Cases = () => {
                 data-pswp-width="431"
                 data-pswp-height="4096"
                 target="_blank"
+                {...{ "aria-label": "open image in fullscreen view" }}
               >
                 <AutoScrollImage
                   containerHeight="640px"
@@ -451,7 +473,12 @@ export const Cases = () => {
               </a>
             </div>
             <div class="flex gap-2.5">
-              <a href="#" class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]">
+              <a
+                href="#"
+                class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]"
+                {...{ "aria-label": "open project in figma" }}
+                target="_blank"
+              >
                 <icons.Figma />
               </a>
               <Button
