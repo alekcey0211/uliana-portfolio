@@ -39,9 +39,9 @@ export const About = () => {
                 href="/files/CV Ezhova Uliana. Web-designer.pdf"
                 target="_blank"
               >
-                Resume
+                Резюме
               </a>
-              <a href="#contacts">Contacts</a>
+              <a href="#contacts">Контакты</a>
             </div>
           </div>
         </div>

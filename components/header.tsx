@@ -26,8 +26,8 @@ export const Header = () => {
             src="/image/2ef77200ef94e61c0855893855d5e3b7.png"
             alt="Красивый трехмерный куб разваливающийся на части"
             isLazy={false}
-            width={699}
-            height={663}
+            width={686}
+            height={653}
             className="w-[600px] translate-y-20"
           />
         </div>

@@ -8,7 +8,7 @@ import { Footer } from "../components/footer.tsx";
 
 import { Content } from "../components/sections/content.tsx";
 import { About } from "../components/sections/about.tsx";
-import { Cases } from "../components/sections/cases.tsx";
+import { Cases } from "../components/sections/cases/index.tsx";
 
 export default function Home(ctx: PageProps) {
   const { url } = ctx;
