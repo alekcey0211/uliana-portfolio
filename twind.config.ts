@@ -23,10 +23,10 @@ export default {
       isolation: "isolate",
     },
     "gradient-1": {
-      background: "linear-gradient(180deg, #2B2A29 0%, #FFFFFF 100%)",
+      background: "linear-gradient(180deg, #2B2A29 0%, #F2F2F2 100%)",
     },
     "gradient-1-inverse": {
-      background: "linear-gradient(180deg, #FFFFFF 0%, #2B2A29 100%)",
+      background: "linear-gradient(180deg, #F2F2F2 0%, #2B2A29 100%)",
     },
     "grid-rows": (parts) =>
       parts[0]?.startsWith("[")
@@ -66,12 +66,13 @@ export default {
       },
       colors: {
         red: "#B62E1F",
-        "grey-1": "#333333",
-        "grey-2": "#4F4F4F",
-        "grey-3": "#828282",
-        "grey-4": "#BDBDBD",
-        "grey-5": "#E0E0E0",
-        "grey-6": "#F2F2F2",
+        "gray-1": "#333333",
+        "gray-2": "#4F4F4F",
+        "gray-3": "#828282",
+        "gray-4": "#BDBDBD",
+        "gray-5": "#E0E0E0",
+        "gray-6": "#F2F2F2",
+        "section-title": "#383736",
       },
     },
     container: (theme) => {
@@ -96,6 +97,7 @@ export default {
       "outline-color": theme("colors", "red") + "!important",
     };
     cssRule[":root"] = css("scroll-smooth");
+    cssRule["body"] = css("bg-gray-6 text-gray-2");
     // cssRule["img"] = css("block max-w-full max-h-full");
   },
 } as Configuration;

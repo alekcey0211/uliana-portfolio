@@ -2,7 +2,7 @@ import { Image } from "../../image.tsx";
 
 export const Models3d = () => {
   return (
-    <>
+    <div class="grid gap-y-20">
       <div class="relative grid grid-cols-[1fr_1fr] gap-x-24 pl-24 pr-8 pt-36 pb-4">
         <div class="absolute -z-10 inset-y-0 left-0 -right-[9999px] gradient-1" />
         <div class="grid content-between gap-y-16">
@@ -12,7 +12,7 @@ export const Models3d = () => {
             height={561}
             className="w-full h-full max-w-[530px] mx-auto object-contain object-center aspect-square"
           />
-          <span class="text-2xl text-grey-3 text-center">
+          <span class="text-2xl text-gray-3 text-center">
             Композиция с эффектом вращения
           </span>
         </div>
@@ -23,12 +23,12 @@ export const Models3d = () => {
             height={653}
             className="w-full h-full max-w-[530px] mx-auto object-contain object-center aspect-square"
           />
-          <span class="text-2xl text-grey-3 text-center">
+          <span class="text-2xl text-gray-3 text-center">
             Разбиение объекта на фрагменты
           </span>
         </div>
       </div>
-      <div class="grid grid-cols-[1fr_1fr] gap-x-24 pl-24 pr-8 pt-36 pb-4">
+      <div class="grid grid-cols-[1fr_1fr] gap-x-24 pl-24 pr-8 pt-12 pb-4">
         <div class="grid content-between gap-y-16">
           <Image
             src="/image/37c3cd914a91b42aa972d754db2d8817.png"
@@ -36,7 +36,7 @@ export const Models3d = () => {
             height={634}
             className="w-full h-full max-w-[530px] mx-auto object-contain object-center aspect-square"
           />
-          <span class="text-2xl text-grey-3 text-center">
+          <span class="text-2xl text-gray-3 text-center">
             Полигональное моделирование
           </span>
         </div>
@@ -47,19 +47,22 @@ export const Models3d = () => {
             height={346}
             className="w-full h-full max-w-[530px] mx-auto object-contain object-center aspect-square"
           />
-          <span class="text-2xl text-grey-3 text-center">
+          <span class="text-2xl text-gray-3 text-center">
             Деформация объектов в композиции
           </span>
         </div>
       </div>
-      <div class="grid text-2xl">
-        <span class="mb-6 max-w-[1030px]">
-          Задача: Создала свою модель (логотип/элемент брендинга) для фестиваля
-          фигурного катания с использованием Arnold Render. Практиковалась в
-          работе с рендером, светом и материалами в 3D моделировании.
+      <div class="grid gap-6 text-2xl">
+        <span class="max-w-[1030px]">
+          Проекты: Создание 3D моделей для брендинга.
         </span>
-        <span>Описание: Модели созданы в Cinema 4D.</span>
+        <span>
+          Описание: Композиции выполнены с использованием различных эффекторов и
+          материалов.
+          <br />
+          Модели созданы в Cinema 4D с ArnoldRender.
+        </span>
       </div>
-    </>
+    </div>
   );
 };

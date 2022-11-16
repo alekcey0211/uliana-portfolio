@@ -8,11 +8,11 @@ export const Header = () => {
   ];
 
   return (
-    <header class="gradient-1">
+    <header class="gradient-1 pb-20">
       <div class="relative container h-[800px] grid grid-rows-[auto_1fr] py-20 text-white">
         <nav class="flex gap-20">
           {links.map(({ link, name }) => (
-            <a href={link} class="px-2 text-xl">
+            <a href={link} class="px-2 text-xl hover:underline">
               {name}
             </a>
           ))}
@@ -20,7 +20,7 @@ export const Header = () => {
         <div class="flex items-center justify-between gap-8">
           <h1 class="grid">
             <span class="text-6xl">Portfolio</span>
-            <span class="text-2xl">Web-designer Ezhova&nbsp;Ulyana</span>
+            <span class="text-2xl">Web-designer Ezhova&nbsp;Uliana</span>
           </h1>
           <Image
             src="/image/2ef77200ef94e61c0855893855d5e3b7.png"

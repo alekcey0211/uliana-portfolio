@@ -4,9 +4,9 @@ import { Image } from "../../image.tsx";
 
 export const Carving = () => {
   return (
-    <>
+    <div class="grid gap-6">
       <div class="flex flex-wrap gap-9 items-end">
-        <div class="relative flex bg-white w-max overflow-hidden bg-grey-5 p-12 justify-between flex-grow-1 max-w-[802px]">
+        <div class="relative flex w-max overflow-hidden gradient-1 p-12 justify-between flex-grow-1 max-w-[802px]">
           <div class="grid content-start gap-y-2.5">
             <div
               class="w-16 h-16 rounded-full"
@@ -70,13 +70,15 @@ export const Carving = () => {
           />
         </div>
       </div>
-      <div class="grid text-2xl max-w-[802px]">
-        <span class="mb-6">
-          Задача: Создать дизайн информационного буклета с карвинг композициями.
-          Подготовить макет к печати.
+      <div class="grid gap-6 text-2xl max-w-[753px]">
+        <span>
+          Проект: Информационный буклет с карвинг композициями для банкетов
         </span>
-        <span>Описание: Рабочий реализованный проект.</span>
+        <span>
+          Описание: Создан дизайн в соответствии с пожеланиями клиента. Макет
+          подготовлен к печати. Реализованный проект.{" "}
+        </span>
       </div>
-    </>
+    </div>
   );
 };

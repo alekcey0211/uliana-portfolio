@@ -24,10 +24,10 @@ const Item = ({
 
 export const Content = () => {
   return (
-    <section id="content" class="py-20">
+    <section id="content" class="py-20 bg-white">
       <div class="container">
         <div class="relative w-max mb-28">
-          <h2 class="text-3xl font-extralight">Cодержание</h2>
+          <h2 class="text-3xl font-extralight text-section-title">Cодержание</h2>
           <div class="absolute bottom-0 right-0 -left-96 border-b-2 border-red" />
         </div>
         <div class="grid grid-cols-5 gap-9">

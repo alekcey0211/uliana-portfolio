@@ -4,11 +4,11 @@ import { Image } from "../../image.tsx";
 
 export const Rosneft = () => {
   return (
-    <>
+    <div class="grid gap-6">
       <div class="flex flex-wrap gap-9 items-end">
         <div
           id="gallery-a5cc5b0e-c309-42ce-917b-ca5e253bdb69"
-          class="relative flex gap-x-4 bg-grey-5 justify-between flex-grow-1 max-w-[802px]"
+          class="relative flex gap-x-4 bg-gray-6 justify-between flex-grow-1 max-w-[802px]"
         >
           <div class="grid content-start gap-y-2.5 p-12">
             <div
@@ -56,13 +56,15 @@ export const Rosneft = () => {
           />
         </div>
       </div>
-      <div class="grid text-2xl mb-24 max-w-[802px]">
-        <span class="max-w-[830px] mb-6">
-          Задача: Создать дизайн интерфейса для ведения базы данных пилотного
-          проекта компании Роснефть в соответствии с брендбуком.
+      <div class="grid text-2xl gap-6 max-w-[802px]">
+        <span class="max-w-[802px]">
+          Проект: Дизайн интерфейса <q>Импортозамещение</q>
         </span>
-        <span>Описание: нереализованный проект.</span>
+        <span>
+          Описание: Создан дизайн интерфейса для управления данными клиентов.
+          Пилотный проект компании Роснефть.
+        </span>
       </div>
-    </>
+    </div>
   );
 };

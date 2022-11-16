@@ -4,7 +4,7 @@ import { Image } from "../../image.tsx";
 
 export const Tehmet = () => {
   return (
-    <>
+    <div class="grid gap-8">
       <div class="flex flex-wrap gap-9 items-end">
         <div class="relative flex justify-between gradient-1 p-12 w-max overflow-hidden flex-grow-1 max-w-[802px]">
           <div class="grid content-start gap-y-2.5">
@@ -51,21 +51,18 @@ export const Tehmet = () => {
           />
         </div>
       </div>
-      <div class="grid text-2xl max-w-[802px]">
-        <span class="mb-6">
-          Задача: Редизайн сайта компании "Техмет Урал" на основе брендбука.
+      <div class="grid gap-6 text-2xl max-w-[802px]">
+        <span>
+          Проект: Редизайн сайта компании "Техмет Урал" на основе брендбука
         </span>
         <span>
           Описание: Реальный проект. Корпоративный сайт с элементами
-          интернет-магазина.
-        </span>
-        <span>
-          Ознакомиться с работой можно по&nbsp;
+          интернет-магазина. Ознакомиться с работой можно по&nbsp;
           <a href="https://tehmet.su/" class="text-red" target="_blank">
             ссылке
           </a>
         </span>
       </div>
-    </>
+    </div>
   );
 };

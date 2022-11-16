@@ -4,11 +4,11 @@ import { Image } from "../../image.tsx";
 
 export const Bicycle = () => {
   return (
-    <>
+    <div class="grid gap-y-8">
       <div class="flex flex-wrap gap-9 items-end">
         <div
           id="gallery-d15f5b36-bf22-4332-8de7-83c2f9c98a7f"
-          class="relative flex bg-grey-5 overflow-hidden justify-between flex-grow-1 max-w-[802px]"
+          class="relative flex bg-gray-5 overflow-hidden justify-between flex-grow-1 max-w-[802px]"
         >
           <div class="grid content-start gap-y-2.5 p-12">
             <div class="w-16 h-16 rounded-full bg-[#D06401]" />
@@ -51,12 +51,13 @@ export const Bicycle = () => {
           />
         </div>
       </div>
-      <div class="grid text-2xl max-w-[802px]">
-        <span class="mb-6">
-          Задача: Создать отзывчивый сайт для клуба любителей велосипедов
+      <div class="grid gap-6 text-2xl max-w-[802px]">
+        <span>Проект: Сайт для клуба любителей велосипедов</span>
+        <span>
+          Описание: Создала макет сайта. Отработала применение акцентных цветов.
+          Учебный проект.
         </span>
-        <span>Описание: Учебный проект.</span>
       </div>
-    </>
+    </div>
   );
 };

@@ -2,10 +2,10 @@ import { Image } from "../image.tsx";
 
 export const About = () => {
   return (
-    <section id="about" class="py-20 bg-grey-6">
+    <section id="about" class="py-20 bg-gray-6">
       <div class="container">
         <div class="relative w-max mb-14">
-          <h2 class="text-3xl font-extralight">Обо мне</h2>
+          <h2 class="text-3xl font-extralight text-section-title">Обо мне</h2>
           <div class="absolute bottom-0 right-0 -left-96 border-b-2 border-red" />
         </div>
         <div class="grid grid-cols-[300px_1fr] xl:grid-cols-[400px_1fr] gap-x-20">
@@ -16,7 +16,7 @@ export const About = () => {
             className="rounded-full aspect-square object-cover object-center"
           />
           <div class="grid gap-y-10">
-            <span class="text-xl xl:text-2xl text-grey-2">
+            <span class="text-xl xl:text-2xl">
               Привет!
               <br />
               Меня зовут Ульяна.

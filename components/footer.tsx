@@ -5,10 +5,10 @@ export const Footer = () => {
   return (
     <footer id="footer" class="gradient-1 relative">
       <div class="container pt-20 pb-14">
-        <div class="grid grid-cols-3 text-white mb-20">
+        <div class="grid grid-cols-3 mb-20">
           <div class="grid gap-y-8 items-start">
-            <span class="text-3xl underline">Компетенции</span>
-            <ul class="text-3xl grid gap-1">
+            <span class="text-3xl underline text-red">Компетенции</span>
+            <ul class="text-3xl grid gap-1 text-white">
               <li>Figma</li>
               <li>Cinema 4D</li>
               <li>Adobe Photoshop</li>
@@ -21,7 +21,7 @@ export const Footer = () => {
           </div>
           <div class="grid gap-y-8 items-start text-center">
             <a
-              class="text-3xl underline"
+              class="text-3xl underline text-red"
               href="/files/CV Ezhova Uliana. Web-designer.pdf"
               target="_blank"
             >
@@ -30,7 +30,7 @@ export const Footer = () => {
           </div>
           <div class="grid gap-y-8 items-start text-right">
             <a
-              class="text-3xl underline"
+              class="text-3xl underline text-red"
               href="/image/5c8139a1ad804f6d90dd6f6b2a6516f3.jpg"
               data-pswp-width="1440"
               data-pswp-height="1308"
@@ -45,14 +45,14 @@ export const Footer = () => {
           <span class="block mb-8 text-3xl text-red">Контакты</span>
           <ul class="grid gap-y-4 text-3xl">
             <li class="flex items-center gap-4">
-              <icons.Phone className="flex-shrink-0 text-grey-6" />
-              <span>
+              <icons.Phone className="flex-shrink-0 text-gray-6" />
+              <span class="text-black">
                 Телефон:&nbsp;<a href="tel:+381629328386">+381-62-9328-386</a>
               </span>
             </li>
             <li class="flex items-center gap-4">
-              <icons.Whatsapp className="flex-shrink-0 text-grey-6" />
-              <span>
+              <icons.Whatsapp className="flex-shrink-0 text-gray-6" />
+              <span class="text-black">
                 Whats App:&nbsp;
                 <a href={`https://wa.me/+79162447626?text=""`}>
                   +7-916-244-76-26
@@ -60,8 +60,8 @@ export const Footer = () => {
               </span>
             </li>
             <li class="flex items-center gap-4">
-              <icons.Envelope className="flex-shrink-0 text-grey-6" />
-              <span>
+              <icons.Envelope className="flex-shrink-0 text-gray-6" />
+              <span class="text-black">
                 e-mail:&nbsp;
                 <a href="mailto:ulyana.nickolaeva@yandex.ru">
                   ulyana.nickolaeva@yandex.ru
@@ -71,10 +71,10 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div class="bg-grey-1 py-14">
+      <div class="bg-gray-1 py-14">
         <div class="container text-white grid gap-4">
           <span class="text-6xl">Portfolio</span>
-          <span class="text-2xl">Web-designer Ezhova Ulyana</span>
+          <span class="text-2xl">Web-designer Ezhova Uiana</span>
         </div>
       </div>
       <Image

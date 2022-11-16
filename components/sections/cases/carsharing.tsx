@@ -4,7 +4,7 @@ import { Image } from "../../image.tsx";
 
 export const Carsharing = () => {
   return (
-    <>
+    <div class="grid gap-8">
       <div class="flex flex-wrap gap-9 items-end">
         <div class="relative flex justify-between bg-white flex-grow-1 max-w-[802px]">
           <div class="grid content-start gap-y-2.5 p-12">
@@ -24,7 +24,7 @@ export const Carsharing = () => {
               <Image
                 src="/image/dae5af52a61694b49b7f6753ea710f45.jpg"
                 width={1024}
-                height={1576}
+                height={1615}
                 className="w-[386px]"
               />
               <a
@@ -72,13 +72,14 @@ export const Carsharing = () => {
           />
         </div>
       </div>
-      <div class="grid text-2xl max-w-[802px]">
-        <span class="mb-6">
-          Задача: Создать лендинг для компании каршеринга с адаптивом для
-          планшета
+      <div class="grid gap-6 text-2xl max-w-[812px]">
+        <span>
+          Проект: Лендинг для компании каршеринга с адаптивом для планшета.
         </span>
-        <span>Описание: Учебный проект.</span>
+        <span>
+          Описание: Учебный проект. Проработка UI- элементов с учетом адаптива.{" "}
+        </span>
       </div>
-    </>
+    </div>
   );
 };

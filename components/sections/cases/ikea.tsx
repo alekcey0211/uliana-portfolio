@@ -5,7 +5,7 @@ import { Image } from "../../image.tsx";
 
 export const Ikea = () => {
   return (
-    <>
+    <div class="grid gap-8">
       <div class="flex flex-wrap gap-9 items-end">
         <div
           id="gallery-e98834a4-bae3-4d4b-86f2-45aedbbe4866"
@@ -18,7 +18,7 @@ export const Ikea = () => {
             <div class="w-16 h-16 rounded-full bg-black" />
           </div>
           <div class="relative pt-3 pr-16 mr-8">
-            <div class="relative block w-max border-t-1 border-l-1 border-r-1 border-grey-3">
+            <div class="relative block w-max border-t-1 border-l-1 border-r-1 border-gray-3">
               <Image
                 src="/image/4f3faee47e9313e0e9d7e9a6346cb2cb.jpg"
                 width={879}
@@ -34,7 +34,7 @@ export const Ikea = () => {
                 {...{ "aria-label": "open image in fullscreen view" }}
               />
             </div>
-            <div class="relative block w-max absolute bottom-0 right-0 border-t-1 border-l-1 border-r-1 border-grey-3">
+            <div class="relative block w-max absolute bottom-0 right-0 border-t-1 border-l-1 border-r-1 border-gray-3">
               <Image
                 src="/image/d7fe4f682a857b4c383ce78fc6b8867e.jpg"
                 width={632}
@@ -64,7 +64,7 @@ export const Ikea = () => {
                 src: "/image/9bd12f11-faba-42dd-8317-0ee245d4534b.jpg",
                 width: 431,
                 height: 4096,
-                className: "w-[158px] border-1 border-grey-3 max-h-[9999px]",
+                className: "w-[158px] border-1 border-gray-3 max-h-[9999px]",
               }}
             />
           </a>
@@ -87,15 +87,14 @@ export const Ikea = () => {
           />
         </div>
       </div>
-      <div class="grid text-2xl max-w-[802px]">
-        <span class="mb-6">
-          Задача: Создание макета карточки товара из интернет-магазина IKEA в
-          Figma разрешение 1440px, 375px, 768px.
-        </span>
+      <div class="grid gap-6 text-2xl max-w-[813px]">
+        <span>Проект: Копия существующего ресурса с адаптивами</span>
         <span>
-          Описание: Учебная работа. Повтор макета существующего ресурса.
+          Описание: Учебный проект. Создан макет карточек товара из
+          интернет-магазина IKEA в Figma разрешение 1440px, 375px, 768px. Повтор
+          существующего ресурса для отработки навыков.
         </span>
       </div>
-    </>
+    </div>
   );
 };
