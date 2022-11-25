@@ -8,7 +8,7 @@ export const Footer = () => {
         <div class="grid grid-cols-3 mb-20">
           <div class="grid gap-y-8 items-start">
             <span class="text-3xl underline text-red">Компетенции</span>
-            <ul class="text-3xl grid gap-1 text-white">
+            <ul class="text-2xl grid gap-1 text-white">
               <li>Figma</li>
               <li>Cinema 4D</li>
               <li>Adobe Photoshop</li>
@@ -43,7 +43,7 @@ export const Footer = () => {
         </div>
         <div id="contacts">
           <span class="block mb-8 text-3xl text-red">Контакты</span>
-          <ul class="grid gap-y-4 text-3xl">
+          <ul class="grid gap-y-4 text-2xl">
             <li class="flex items-center gap-4">
               <icons.Phone className="flex-shrink-0 text-gray-6" />
               <span class="text-black">
