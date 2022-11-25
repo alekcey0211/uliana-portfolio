@@ -74,7 +74,7 @@ export const Footer = () => {
       <div class="bg-gray-1 py-14">
         <div class="container text-white grid gap-4">
           <span class="text-6xl">Portfolio</span>
-          <span class="text-2xl">Web-designer Ezhova Uiana</span>
+          <span class="text-2xl">Web-designer Ezhova Uliana</span>
         </div>
       </div>
       <Image
