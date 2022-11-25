@@ -47,7 +47,7 @@ export const Footer = () => {
             <li class="flex items-center gap-4">
               <icons.Phone className="flex-shrink-0 text-gray-6" />
               <span class="text-black">
-                Телефон:&nbsp;<a href="tel:+381629328386">+381-62-9328-386</a>
+                Телефон:&nbsp;<a href="tel:+381629328386">+381 62 9328 386</a>
               </span>
             </li>
             <li class="flex items-center gap-4">
@@ -55,7 +55,7 @@ export const Footer = () => {
               <span class="text-black">
                 Whats App:&nbsp;
                 <a href={`https://wa.me/+79162447626?text=""`}>
-                  +7-916-244-76-26
+                  +7 (916) 244-76-26
                 </a>
               </span>
             </li>
