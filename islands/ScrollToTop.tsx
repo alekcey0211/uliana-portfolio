@@ -28,7 +28,7 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div class={`fixed bottom-2 right-2 ${!isVisible && "hidden"}`}>
+    <div class={`fixed bottom-8 right-8 ${!isVisible && "hidden"}`}>
       <button
         type="button"
         onClick={scrollToTop}
