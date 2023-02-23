@@ -1,7 +1,9 @@
-import { useState, useEffect } from "preact/hooks";
+import { IS_BROWSER } from "$fresh/runtime.ts";
+import { useEffect, useState } from "preact/hooks";
 import { icons } from "../components/icons.tsx";
+import { i18n } from "../shared/i18n.ts";
 
-export default function ScrollToTop() {
+export default function ScrollToTop({ariaLabel}:{ariaLabel?: string}) {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -34,7 +36,7 @@ export default function ScrollToTop() {
         onClick={scrollToTop}
         class="inline-flex items-center bg-red bg-opacity-80 hover:bg-opacity-90 active:bg-opacity-95 rounded-full p-3 text-white shadow-sm"
         {...{
-          "aria-label": "scroll to top",
+          "aria-label": ariaLabel,
         }}
       >
         <icons.ArrowUp aria-hidden="true" />

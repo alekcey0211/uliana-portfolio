@@ -33,9 +33,11 @@ export const About = () => {
                 href="/files/CV Ezhova Uliana. Web-designer.pdf"
                 target="_blank"
               >
-                Резюме
+                {i18n.t("0fe8a49c-187d-468a-a868-0b4261ec11f8")}
               </a>
-              <a href="#contacts">Контакты</a>
+              <a href="#contacts">
+                {i18n.t("e0b2836a-ea2e-4d25-ba63-daf275ca69ed")}
+              </a>
             </div>
           </div>
         </div>

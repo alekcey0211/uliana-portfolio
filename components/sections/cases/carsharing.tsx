@@ -1,3 +1,4 @@
+import { i18n } from "../../../shared/i18n.ts";
 import { Button } from "../../button.tsx";
 import { icons } from "../../icons.tsx";
 import { Image } from "../../image.tsx";
@@ -33,7 +34,9 @@ export const Carsharing = () => {
                 data-pswp-width="1024"
                 data-pswp-height="2650"
                 target="_blank"
-                {...{ "aria-label": "open image in fullscreen view" }}
+                {...{
+                  "aria-label": i18n.t("d4a71aeb-a81c-4eab-897a-4b240c1aa889"),
+                }}
               />
             </div>
             <div class="relative w-max">
@@ -49,7 +52,9 @@ export const Carsharing = () => {
                 data-pswp-width="1440"
                 data-pswp-height="3275"
                 target="_blank"
-                {...{ "aria-label": "open image in fullscreen view" }}
+                {...{
+                  "aria-label": i18n.t("ce8432ff-937f-4e4f-be8f-750f5efe186f"),
+                }}
               />
             </div>
           </div>
@@ -58,13 +63,15 @@ export const Carsharing = () => {
           <a
             href="https://www.figma.com/proto/afa3IMww9XW81PUBefsV71/carshare-(Copy)?page-id=402%3A30&node-id=402%3A387&viewport=770%2C812%2C0.54&scaling=min-zoom"
             class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]"
-            {...{ "aria-label": "open project in figma" }}
+            {...{
+              "aria-label": i18n.t("66170f09-5fbe-4458-ae96-b6266fd3f7c9"),
+            }}
             target="_blank"
           >
             <icons.Figma />
           </a>
           <Button
-            text="Подробнее"
+            text={i18n.t("f06e487c-0f68-412e-9ddc-083c9be95cdf")}
             data={{
               onclick:
                 "galleryOpen('gallery-1e3e0c0d-89b7-464c-823d-fdd5647e1cc9')",
@@ -73,12 +80,8 @@ export const Carsharing = () => {
         </div>
       </div>
       <div class="grid gap-6 text-2xl max-w-[812px]">
-        <span>
-          Проект: Лендинг для компании каршеринга с адаптивом для планшета.
-        </span>
-        <span>
-          Описание: Учебный проект. Проработка UI- элементов с учетом адаптива.{" "}
-        </span>
+        <span>{i18n.t("4a854ade-aecd-497e-8582-19e2765f9f27")}</span>
+        <span>{i18n.t("bbc0f290-314f-4d38-8a36-cd8d4f6c2292")}</span>
       </div>
     </div>
   );

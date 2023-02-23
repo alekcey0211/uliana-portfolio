@@ -25,7 +25,7 @@ export default function Home(ctx: PageProps) {
       <About />
       <Cases />
       <Footer />
-      <ScrollToTop />
+      <ScrollToTop ariaLabel={i18n.t("054edeb7-a676-4138-b509-a755b1069835")} />
     </>
   );
 }
