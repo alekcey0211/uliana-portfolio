@@ -1,4 +1,5 @@
 import AutoScrollImage from "../../../islands/AutoScrollImage.tsx";
+import { i18n } from "../../../shared/i18n.ts";
 import { Button } from "../../button.tsx";
 import { icons } from "../../icons.tsx";
 import { Image } from "../../image.tsx";
@@ -31,7 +32,9 @@ export const Ikea = () => {
                 data-pswp-width="879"
                 data-pswp-height="4096"
                 target="_blank"
-                {...{ "aria-label": "open image in fullscreen view" }}
+                {...{
+                  "aria-label": i18n.t("3e5e78f7-eb25-447b-9d39-ce42217a5329"),
+                }}
               />
             </div>
             <div class="relative block w-max absolute bottom-0 right-0 border-t-1 border-l-1 border-r-1 border-gray-3">
@@ -47,7 +50,9 @@ export const Ikea = () => {
                 data-pswp-width="632"
                 data-pswp-height="4096"
                 target="_blank"
-                {...{ "aria-label": "open image in fullscreen view" }}
+                {...{
+                  "aria-label": i18n.t("11ec35a0-440a-4059-94ef-c813100a7642"),
+                }}
               />
             </div>
           </div>
@@ -56,7 +61,9 @@ export const Ikea = () => {
             data-pswp-width="431"
             data-pswp-height="4096"
             target="_blank"
-            {...{ "aria-label": "open image in fullscreen view" }}
+            {...{
+              "aria-label": i18n.t("3edd8405-a492-449c-92c3-5b5017911e47"),
+            }}
           >
             <AutoScrollImage
               containerHeight="640px"
@@ -73,13 +80,15 @@ export const Ikea = () => {
           <a
             href="https://www.figma.com/proto/iZu5EKfo2B8brGXZ0RMYR1/IKEA?page-id=601%3A1283&node-id=601%3A1284&viewport=441%2C718%2C0.18&scaling=min-zoom"
             class="border-1 border-gray-800 border-1 border-gray-800 border-opacity-[0.1] hover:border-opacity-[0.2]"
-            {...{ "aria-label": "open project in figma" }}
+            {...{
+              "aria-label": i18n.t("2db923c0-89c7-455d-b353-eb048f5c751e"),
+            }}
             target="_blank"
           >
             <icons.Figma />
           </a>
           <Button
-            text="Подробнее"
+            text={i18n.t("7768c92a-a21a-4e80-a1b7-681a5ccb6d34")}
             data={{
               onclick:
                 "galleryOpen('gallery-e98834a4-bae3-4d4b-86f2-45aedbbe4866')",
@@ -88,12 +97,8 @@ export const Ikea = () => {
         </div>
       </div>
       <div class="grid gap-6 text-2xl max-w-[813px]">
-        <span>Проект: Копия существующего ресурса с адаптивами</span>
-        <span>
-          Описание: Учебный проект. Создан макет карточек товара из
-          интернет-магазина IKEA в Figma разрешение 1440px, 375px, 768px. Повтор
-          существующего ресурса для отработки навыков.
-        </span>
+        <span>{i18n.t("63fa46d9-25bd-4286-9cc0-ac31d8a5745b")}</span>
+        <span>{i18n.t("f7eba3d1-808a-4391-bf8a-cc5fdbe0c3a3")}</span>
       </div>
     </div>
   );
